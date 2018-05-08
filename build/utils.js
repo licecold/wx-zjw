@@ -18,7 +18,15 @@ exports.cssLoaders = function (options) {
   const cssLoader = {
     loader: 'css-loader',
     options: {
-      sourceMap: options.sourceMap
+      sourceMap: options.sourceMap,
+      importLoader: 2
+    }
+  }
+
+  const px2remLoader = {
+    loader: 'px2rem-loader',
+    options: {
+      remUnit: 108
     }
   }
 
@@ -31,7 +39,9 @@ exports.cssLoaders = function (options) {
 
   // generate loader string to be used with extract text plugin
   function generateLoaders (loader, loaderOptions) {
-    const loaders = options.usePostCSS ? [cssLoader, postcssLoader] : [cssLoader]
+    const loaders = options.usePostCSS ? [cssLoader, px2remLoader, postcssLoader] : [cssLoader, postcssLoader]
+
+
 
     if (loader) {
       loaders.push({
