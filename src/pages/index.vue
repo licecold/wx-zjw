@@ -6,6 +6,11 @@
           <search @afterInput="search"></search>
         </div>
       </div>
+      <div class="navList">
+        <ul>
+          <li v-for="(nav, index) in navList" :key="index"></li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
@@ -41,6 +46,11 @@ export default {
           top: 0;
           left: 0;
         }
+      }
+      .navList{
+        padding: 0 30px;
+        height: 289px;
+        
       }
     }
   }
