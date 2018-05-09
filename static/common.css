@@ -1,156 +1,96 @@
-html,
 body,
 div,
 span,
-object,
-iframe,
+header,
+footer,
+nav,
+section,
+aside,
+article,
+ul,
+dl,
+dt,
+dd,
+li,
+a,
+p,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-p,
-blockquote,
-pre,
-abbr,
-address,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-var,
-b,
 i,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-figcaption,
+b,
+textarea,
+button,
+input,
+select,
 figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
+figcaption {
   padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  font-family: "Microsoft YaHei";
-  vertical-align: baseline;
-  background: transparent;
+  margin: 0;
+  box-sizing: border-box;
 }
-body {
-  line-height: 1;
-}
-:focus {
-  outline: 1;
-}
-article,
-aside,
-canvas,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-summary {
-  display: block;
-}
-nav ul {
+
+li,
+ol {
   list-style: none;
 }
-blockquote,
-q {
-  quotes: none;
+
+input[type="button"],
+input[type="submit"],
+input[type="search"],
+input[type="reset"] {
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+
+textarea {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.clear:after {
   content: '';
-  content: none;
-}
-a {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
-}
-ins {
-  background-color: #ff9;
-  color: #000;
-  text-decoration: none;
-}
-mark {
-  background-color: #ff9;
-  color: #000;
-  font-style: italic;
-  font-weight: bold;
-}
-del {
-  text-decoration: line-through;
-}
-abbr[title],
-dfn[title] {
-  border-bottom: 1px dotted #000;
-  cursor: help;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-hr {
   display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #cccccc;
-  margin: 1em 0;
-  padding: 0;
+  clear: both;
 }
-input,
-select {
-  vertical-align: middle;
+
+.clear {
+  zoom: 1;
 }
+
+.back_img {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.margin {
+  margin: 0 auto;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
